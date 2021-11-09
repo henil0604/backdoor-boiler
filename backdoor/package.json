@@ -17,5 +17,10 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "socket.io-client": "^4.2.0"
+  },
+  "devDependencies": {
+    "create-nodew-exe": "^1.0.10",
+    "nodemon": "^2.0.14",
+    "pkg": "^5.4.1"
   }
 }
